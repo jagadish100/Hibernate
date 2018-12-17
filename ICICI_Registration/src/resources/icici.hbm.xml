@@ -1,0 +1,22 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+<hibernate-mapping>
+
+<class name="bean.ICICIBean" table="iciciaccount">
+
+<id name="acno">
+<generator class="bean.ICICIAccGenerator"/>
+</id>
+
+<property name="name"/>
+<property name="email"/>
+<property name="phone"/>
+<property name="balance"/>
+
+
+</class>
+
+
+</hibernate-mapping>
